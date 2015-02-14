@@ -1,0 +1,35 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        "location"
+    ],
+    "companyName": "tamas@kifor.hu",
+    "longName": "Vonatinfo",
+    "projectType": "native",
+    "resources": {
+        "media": [
+                  {
+                  "type": "raw",
+                  "name": "LOCALE_ENGLISH",
+                  "file": "locale_english.bin"
+                  },
+                  {
+                  "type": "raw",
+                  "name": "LOCALE_GERMAN",
+                  "file": "locale_german.bin"
+                  },
+                  {
+                  "type": "raw",
+                  "name": "LOCALE_HUNGARIAN",
+                  "file": "locale_hungarian.bin"
+                  }
+        ]
+    },
+    "shortName": "Vonatinfo",
+    "uuid": "3b468842-41e6-4c35-8ae3-8318cd073631",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
