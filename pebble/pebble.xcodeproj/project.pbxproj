@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BE1E261A8FEA7B0014CACA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1E251A8FEA7B0014CACA /* main.c */; };
+		02BE1E341A8FEBB30014CACA /* android_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1E2C1A8FEBB30014CACA /* android_client.c */; };
+		02BE1E351A8FEBB30014CACA /* android_listener.c in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1E2E1A8FEBB30014CACA /* android_listener.c */; };
+		02BE1E361A8FEBB30014CACA /* clock_window.c in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1E301A8FEBB30014CACA /* clock_window.c */; };
+		02BE1E371A8FEBB30014CACA /* stations_window.c in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1E321A8FEBB30014CACA /* stations_window.c */; };
+		02BE1E461A8FFCD30014CACA /* localize.c in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1E441A8FFCD30014CACA /* localize.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02BE1E201A8FEA7B0014CACA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02BE1E221A8FEA7B0014CACA /* pebble */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pebble; sourceTree = BUILT_PRODUCTS_DIR; };
+		02BE1E251A8FEA7B0014CACA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		02BE1E2C1A8FEBB30014CACA /* android_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = android_client.c; sourceTree = "<group>"; };
+		02BE1E2D1A8FEBB30014CACA /* android_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = android_client.h; sourceTree = "<group>"; };
+		02BE1E2E1A8FEBB30014CACA /* android_listener.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = android_listener.c; sourceTree = "<group>"; };
+		02BE1E2F1A8FEBB30014CACA /* android_listener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = android_listener.h; sourceTree = "<group>"; };
+		02BE1E301A8FEBB30014CACA /* clock_window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clock_window.c; sourceTree = "<group>"; };
+		02BE1E311A8FEBB30014CACA /* clock_window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clock_window.h; sourceTree = "<group>"; };
+		02BE1E321A8FEBB30014CACA /* stations_window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stations_window.c; sourceTree = "<group>"; };
+		02BE1E331A8FEBB30014CACA /* stations_window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stations_window.h; sourceTree = "<group>"; };
+		02BE1E431A8FFCD30014CACA /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		02BE1E441A8FFCD30014CACA /* localize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = localize.c; sourceTree = "<group>"; };
+		02BE1E451A8FFCD30014CACA /* localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = localize.h; sourceTree = "<group>"; };
+		02BE1E471A8FFEA50014CACA /* appinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appinfo.json; sourceTree = "<group>"; };
+		02BE1E481A9000100014CACA /* dict2bin.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dict2bin.py; sourceTree = "<group>"; };
+		02BE1E491A9000100014CACA /* gen_dict.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gen_dict.py; sourceTree = "<group>"; };
+		02BE1E4A1A9000100014CACA /* locale_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locale_english.json; sourceTree = "<group>"; };
+		02BE1E4B1A9000100014CACA /* locale_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locale_german.json; sourceTree = "<group>"; };
+		02BE1E4C1A9000100014CACA /* locale_hungarian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locale_hungarian.json; sourceTree = "<group>"; };
+		02BE1E4D1A9003950014CACA /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		02BE1E4E1A9003B90014CACA /* deploy.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = deploy.sh; sourceTree = "<group>"; };
+		02BE1E4F1A9003F30014CACA /* translate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = translate.sh; sourceTree = "<group>"; };
+		02BE1E511A9007B40014CACA /* locale_english_previous.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locale_english_previous.json; sourceTree = "<group>"; };
+		02BE1E521A9007B40014CACA /* locale_german_previous.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locale_german_previous.json; sourceTree = "<group>"; };
+		02BE1E531A9007B40014CACA /* locale_hungarian_previous.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locale_hungarian_previous.json; sourceTree = "<group>"; };
+		02BE1E541A9008B40014CACA /* get_dictinary.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = get_dictinary.sh; sourceTree = "<group>"; };
+		02BE1E551A900B490014CACA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		02BE1E561A99F7F20014CACA /* log.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = log.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02BE1E1F1A8FEA7B0014CACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02BE1E191A8FEA7B0014CACA = {
+			isa = PBXGroup;
+			children = (
+				02BE1E561A99F7F20014CACA /* log.sh */,
+				02BE1E551A900B490014CACA /* .gitignore */,
+				02BE1E541A9008B40014CACA /* get_dictinary.sh */,
+				02BE1E511A9007B40014CACA /* locale_english_previous.json */,
+				02BE1E521A9007B40014CACA /* locale_german_previous.json */,
+				02BE1E531A9007B40014CACA /* locale_hungarian_previous.json */,
+				02BE1E4F1A9003F30014CACA /* translate.sh */,
+				02BE1E4E1A9003B90014CACA /* deploy.sh */,
+				02BE1E4D1A9003950014CACA /* build.sh */,
+				02BE1E481A9000100014CACA /* dict2bin.py */,
+				02BE1E491A9000100014CACA /* gen_dict.py */,
+				02BE1E4A1A9000100014CACA /* locale_english.json */,
+				02BE1E4B1A9000100014CACA /* locale_german.json */,
+				02BE1E4C1A9000100014CACA /* locale_hungarian.json */,
+				02BE1E471A8FFEA50014CACA /* appinfo.json */,
+				02BE1E241A8FEA7B0014CACA /* src */,
+				02BE1E231A8FEA7B0014CACA /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		02BE1E231A8FEA7B0014CACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02BE1E221A8FEA7B0014CACA /* pebble */,
+			);
+			indentWidth = 2;
+			name = Products;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		02BE1E241A8FEA7B0014CACA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				02BE1E431A8FFCD30014CACA /* hash.h */,
+				02BE1E441A8FFCD30014CACA /* localize.c */,
+				02BE1E451A8FFCD30014CACA /* localize.h */,
+				02BE1E2C1A8FEBB30014CACA /* android_client.c */,
+				02BE1E2D1A8FEBB30014CACA /* android_client.h */,
+				02BE1E2E1A8FEBB30014CACA /* android_listener.c */,
+				02BE1E2F1A8FEBB30014CACA /* android_listener.h */,
+				02BE1E301A8FEBB30014CACA /* clock_window.c */,
+				02BE1E311A8FEBB30014CACA /* clock_window.h */,
+				02BE1E321A8FEBB30014CACA /* stations_window.c */,
+				02BE1E331A8FEBB30014CACA /* stations_window.h */,
+				02BE1E251A8FEA7B0014CACA /* main.c */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02BE1E211A8FEA7B0014CACA /* pebble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02BE1E291A8FEA7B0014CACA /* Build configuration list for PBXNativeTarget "pebble" */;
+			buildPhases = (
+				02BE1E1E1A8FEA7B0014CACA /* Sources */,
+				02BE1E1F1A8FEA7B0014CACA /* Frameworks */,
+				02BE1E201A8FEA7B0014CACA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pebble;
+			productName = pebble;
+			productReference = 02BE1E221A8FEA7B0014CACA /* pebble */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02BE1E1A1A8FEA7B0014CACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kifor Tamás";
+				TargetAttributes = {
+					02BE1E211A8FEA7B0014CACA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 02BE1E1D1A8FEA7B0014CACA /* Build configuration list for PBXProject "pebble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02BE1E191A8FEA7B0014CACA;
+			productRefGroup = 02BE1E231A8FEA7B0014CACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02BE1E211A8FEA7B0014CACA /* pebble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02BE1E1E1A8FEA7B0014CACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02BE1E351A8FEBB30014CACA /* android_listener.c in Sources */,
+				02BE1E341A8FEBB30014CACA /* android_client.c in Sources */,
+				02BE1E461A8FFCD30014CACA /* localize.c in Sources */,
+				02BE1E361A8FEBB30014CACA /* clock_window.c in Sources */,
+				02BE1E371A8FEBB30014CACA /* stations_window.c in Sources */,
+				02BE1E261A8FEA7B0014CACA /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02BE1E271A8FEA7B0014CACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		02BE1E281A8FEA7B0014CACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		02BE1E2A1A8FEA7B0014CACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02BE1E2B1A8FEA7B0014CACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02BE1E1D1A8FEA7B0014CACA /* Build configuration list for PBXProject "pebble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02BE1E271A8FEA7B0014CACA /* Debug */,
+				02BE1E281A8FEA7B0014CACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02BE1E291A8FEA7B0014CACA /* Build configuration list for PBXNativeTarget "pebble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02BE1E2A1A8FEA7B0014CACA /* Debug */,
+				02BE1E2B1A8FEA7B0014CACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02BE1E1A1A8FEA7B0014CACA /* Project object */;
+}

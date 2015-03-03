@@ -12,6 +12,28 @@ void send_log(char* message)
     app_message_outbox_send();
 }
 
+void send_get_stations()
+{
+  DictionaryIterator *iter;
+  app_message_outbox_begin(&iter);
+  
+  Tuplet value = TupletCString(GET_STATIONS, "");
+  dict_write_tuplet(iter, &value);
+  
+  app_message_outbox_send();
+}
+
+void send_stop_timetable_update()
+{
+  DictionaryIterator *iter;
+  app_message_outbox_begin(&iter);
+  
+  Tuplet value = TupletCString(STOP_TIMETABLE_UPDATE, "");
+  dict_write_tuplet(iter, &value);
+  
+  app_message_outbox_send();
+}
+
 void send_get_timetable(char* from_station, char* to_station)
 {
     //send_log("send_get_timetable");

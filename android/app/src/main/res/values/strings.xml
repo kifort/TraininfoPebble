@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Vonatinfo</string>
-    <string name="title_activity_traininfo">Vonatinfo</string>
+    <string name="app_name">Traininfo</string>
+    <string name="title_activity_traininfo">Traininfo</string>
     <string name="action_settings">Settings</string>
+    <string name="action_stations">Stations</string>
+    <string name="title_activity_stations">Favourite Stations</string>
+    <string name="favourite_station1">1. favourite station</string>
+    <string name="favourite_station2">2. favourite station</string>
+    <string name="favourite_station3">3. favourite station</string>
+    <string name="favourite_station4">4. favourite station</string>
+    <string name="favourite_station5">5. favourite station</string>
+    <string name="error_message_failed_to_query_stations">Unable to query stations</string>
+    <string name="error_message_failed_to_connect_internet">Unable to connect to the Internet.</string>
+    <string name="error_message_unknown_station">Unknown station.</string>
+    <string name="error_message_mandatory_station">Station is mandatory.</string>
+    <string name="info_message_train_search_started">Train search started.</string>
+    <string name="info_message_train_passed">Train passed.</string>
+    <string name="info_message_no_more_train_today">No more train today.</string>
+    <string name="ask_message_set_favourite_station">Set at least two stations.</string>
+    <string name="ask_message_start_search">Start search from your watch.</string>
 
 </resources>

@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
+        jar="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-2993119c684c65b4e071dcafe2168f5ab2b37810.jar" />
+    </item>
+    <item
+        jar="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/pre-dexed/debug/classes-fe4e7ab971803726220dd14722c12ad86392311d.jar" />
+    </item>
+    <item
         jar="/Users/tamas/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.1/1eb6690b0c629d7000c77a72df5e822fb974f521/jsoup-1.8.1.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="1eb6690b0c629d7000c77a72df5e822fb974f521">
-        <dex dex="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/pre-dexed/debug/jsoup-1.8.1-c32236760ae2f5daa1fbbfb0ad385a7c8f5d2946.jar" />
+        <dex dex="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/pre-dexed/debug/jsoup-1.8.1-c32236760ae2f5daa1fbbfb0ad385a7c8f5d2946.jar" />
     </item>
     <item
         jar="/Users/tamas/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.7/5599707a3eaad13e889f691b3af78c8c03842195/joda-time-2.7.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/pre-dexed/debug/joda-time-2.7-5a74d1c546bf072bf928fc8ae97090e2d63c3d93.jar" />
+        <dex dex="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/pre-dexed/debug/joda-time-2.7-5a74d1c546bf072bf928fc8ae97090e2d63c3d93.jar" />
     </item>
     <item
-        jar="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/pre-dexed/debug/classes-c5b520508d2f87d2d3395443ee1fffa9424fea26.jar" />
-    </item>
-    <item
-        jar="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/pre-dexed/debug/classes-7ad55a9dff4d14bb13ce24852a88f1fab0fd29dd.jar" />
-    </item>
-    <item
-        jar="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/2.6.0/classes.jar"
+        jar="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/2.6.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="660dc1d342b8e31da1cc51e79c66d636a77a1e98">
-        <dex dex="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/pre-dexed/debug/classes-7c4f1910e049a7808d78a47373d9e1a7d1e103a0.jar" />
+        <dex dex="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/pre-dexed/debug/classes-3d763e13105f4a6d566212e61e4e007891979148.jar" />
     </item>
     <item
         jar="/Users/tamas/Workspaces/android-sdks/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-72f3081dd429f9e3002fd71a3f28d214c85ce2cc.jar" />
+        <dex dex="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-72f3081dd429f9e3002fd71a3f28d214c85ce2cc.jar" />
     </item>
     <item
-        jar="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/tamas/Workspaces/sources/projects/Vonatinfo/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-cb0c3312c0ae88115a45295916c30164d1aceb07.jar" />
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/tamas/Workspaces/sources/projects/TraininfoPebble/android/app/build/intermediates/pre-dexed/debug/classes-e8657d29bb8b0c038837249453acdd49a08fbb60.jar" />
     </item>
 
 </items>

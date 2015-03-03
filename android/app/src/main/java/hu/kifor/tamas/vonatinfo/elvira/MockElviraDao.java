@@ -2,6 +2,9 @@ package hu.kifor.tamas.vonatinfo.elvira;
 
 import org.joda.time.LocalTime;
 
+import java.util.Arrays;
+import java.util.List;
+
 import hu.kifor.tamas.vonatinfo.TrainDao;
 import hu.kifor.tamas.vonatinfo.model.ArrivalAndDeparture;
 import hu.kifor.tamas.vonatinfo.model.Timetable;
@@ -41,5 +44,13 @@ public class MockElviraDao implements TrainDao {
         nextDeparture--;
 
         return timetable;
+    }
+
+    @Override
+    public void refreshStations() {}
+
+    @Override
+    public List<String> getAllStations() {
+        return Arrays.asList(new String[]{"Verőce", "BUDAPEST*", "Vác", "Vác-Alsóváros", "Rákospalota-Újpest"});
     }
 }

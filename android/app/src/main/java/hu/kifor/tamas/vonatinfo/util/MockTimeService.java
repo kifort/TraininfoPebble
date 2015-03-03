@@ -11,8 +11,13 @@ public class MockTimeService implements TimeService {
     private LocalTime now = LocalTime.now().minusMinutes(1);
 
     @Override
-    public void sleep() throws InterruptedException {
-        Thread.sleep(SLEEP_TIME);
+    public void sleep(Thread thread) throws InterruptedException {
+        thread.sleep(SLEEP_TIME);
+    }
+
+    @Override
+    public void wakeUp(Thread thread) {
+        thread.interrupt();
     }
 
     @Override

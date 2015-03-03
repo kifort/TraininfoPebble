@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vonatinfo</string>
+    <string name="action_settings">Beállítások</string>
+    <string name="action_stations">Állomások</string>
+    <string name="title_activity_stations">Kedvenc Állomások</string>
+    <string name="title_activity_traininfo">Vonatinfo</string>
+    <string name="favourite_station1">1. kedvenc állomás</string>
+    <string name="favourite_station2">2. kedvenc állomás</string>
+    <string name="favourite_station3">3. kedvenc állomás</string>
+    <string name="favourite_station4">4. kedvenc állomás</string>
+    <string name="favourite_station5">5. kedvenc állomás</string>
+    <string name="error_message_failed_to_query_stations">Nem sikerült lekérdezni az állomások listáját</string>
+    <string name="error_message_failed_to_connect_internet">Unable to connect to the Internet.</string>
+    <string name="error_message_unknown_station">Ismeretlen állomás.</string>
+    <string name="error_message_mandatory_station">Az állomás megdása kötelező.</string>
+    <string name="info_message_train_search_started">Vonat keresés indul.</string>
+    <string name="info_message_train_passed">A vonat elment.</string>
+    <string name="info_message_no_more_train_today">Ma már nincs több vonat.</string>
+    <string name="ask_message_set_favourite_station">Adjon meg legalább két állomást!</string>
+    <string name="ask_message_start_search">Indítsa el a keresést az óráján!</string>
+
+</resources>

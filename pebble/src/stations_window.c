@@ -5,9 +5,12 @@
 #include "android_client.h"
 
 int number_of_selectable_stations = 5;
-char* favourite_stations[5] = {"Verőce", "BUDAPEST*", "Vác", "Rákospalota-Újpest", "Vác-Alsóváros"};
-int from_station = 5;
-int to_station = 5;
+//char* favourite_stations[5] = {"Verőce", "BUDAPEST*", "Vác", "Rákospalota-Újpest", "Vác-Alsóváros"};
+//char* favourite_stations[5] = {"test", "BUDAPEST*", "Vác", "Rákospalota-Újpest", "Vác-Alsóváros"};
+static char favourite_stations[5][100];
+
+static int from_station = 5;
+static int to_station = 5;
 
 static TextLayer *title_textlayer;
 
@@ -17,10 +20,13 @@ static int get_selectable_station_index(int index) {
 
 void draw_row_callback(GContext *ctx, Layer *cell_layer, MenuIndex *cell_index, void *callback_context)
 {
+    APP_LOG(APP_LOG_LEVEL_INFO, "draw_row_callback");
     int favourite_index;
+  
     switch(cell_index->row)
     {
     case 0:
+        //app_log(APP_LOG_LEVEL_INFO, "stations_window", 29, "draw_row_callback 0");
         favourite_index = get_selectable_station_index(0);
         menu_cell_basic_draw(ctx, cell_layer, favourite_stations[favourite_index], NULL, NULL);
         break;
@@ -45,11 +51,16 @@ void draw_row_callback(GContext *ctx, Layer *cell_layer, MenuIndex *cell_index, 
  
 uint16_t num_rows_callback(MenuLayer *menu_layer, uint16_t section_index, void *callback_context)
 {
-  return from_station == number_of_selectable_stations ? number_of_selectable_stations : number_of_selectable_stations - 1;
+  uint16_t num_rows = from_station == number_of_selectable_stations ? number_of_selectable_stations : number_of_selectable_stations - 1;
+  app_log(APP_LOG_LEVEL_DEBUG, "stations_window", 55, "number_of_selectable_stations %d", number_of_selectable_stations);
+  app_log(APP_LOG_LEVEL_DEBUG, "stations_window", 55, "num_rows %d", num_rows);
+  
+  return num_rows;
 }
  
 void select_click_callback(MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context)
 {
+  app_log(APP_LOG_LEVEL_DEBUG, "stations_window", 65, "select_click_callback");
   if(from_station == number_of_selectable_stations) {
     from_station = cell_index->row;
     text_layer_set_text(title_textlayer, _("Destination"));
@@ -61,16 +72,34 @@ void select_click_callback(MenuLayer *menu_layer, MenuIndex *cell_index, void *c
   }
 }
 
+void set_favourite_stations(char* stations[], int number_of_stations) {
+  
+  for(int i=0; i < number_of_stations; i++) {
+    //favourite_stations[i] = stations[i];
+    strcpy(favourite_stations[i], stations[i]);
+  }
+  number_of_selectable_stations = number_of_stations;
+}
+
 void research(void) {
-  send_get_timetable(favourite_stations[from_station], favourite_stations[to_station]);
+  if(from_station < number_of_selectable_stations && to_station < number_of_selectable_stations) {
+    //stopsearch();
+    send_get_timetable(favourite_stations[from_station], favourite_stations[to_station]);
+  }
 }
 
 void newsearch(void) {
+  if(from_station < number_of_selectable_stations && to_station < number_of_selectable_stations) {
+    stopsearch();
+  }
   from_station = number_of_selectable_stations;
   to_station = number_of_selectable_stations;
   show_stations_window();
 }
 
+void stopsearch(void) {
+  send_stop_timetable_update();
+}
 
 static void fix_auto_generated_ui_code(Window *s_window, MenuLayer *stations_menulayer) {
   //Instead of layer_add_child(window_get_root_layer(s_window), (Layer *)stations_menulayer);
@@ -122,6 +151,7 @@ void show_stations_window(void) {
   window_set_window_handlers(s_window, (WindowHandlers) {
     .unload = handle_window_unload,
   });
+  hide_clock_window();
   window_stack_push(s_window, true);
 }
 

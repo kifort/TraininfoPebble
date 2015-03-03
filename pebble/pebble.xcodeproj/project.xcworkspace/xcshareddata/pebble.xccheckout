@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7232C823-ABF6-4A82-8C1D-E8EB06FEDFA4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>pebble</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0C0737EC782A528D6B666143424E3F871CFA89CE</key>
+		<string>github.com:kifort/TraininfoPebble.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pebble/pebble.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0C0737EC782A528D6B666143424E3F871CFA89CE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kifort/TraininfoPebble.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0C0737EC782A528D6B666143424E3F871CFA89CE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0C0737EC782A528D6B666143424E3F871CFA89CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TraininfoPebble</string>
+		</dict>
+	</array>
+</dict>
+</plist>

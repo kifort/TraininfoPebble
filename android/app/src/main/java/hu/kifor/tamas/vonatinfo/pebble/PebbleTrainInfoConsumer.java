@@ -10,6 +10,7 @@ import org.joda.time.Period;
 import org.joda.time.format.PeriodFormatter;
 import org.joda.time.format.PeriodFormatterBuilder;
 
+import hu.kifor.tamas.vonatinfo.R;
 import hu.kifor.tamas.vonatinfo.TrainInfoConsumer;
 
 /**
@@ -19,6 +20,8 @@ public class PebbleTrainInfoConsumer implements TrainInfoConsumer {
     private static final String LOG_TAG = "PebbleTrainInfoConsumer";
 
     private static final PeriodFormatter PERIOD_FORMATTER = new PeriodFormatterBuilder()
+            .printZeroAlways()
+            .minimumPrintedDigits(2)
             .appendHours()
             .appendSeparator(":")
             .appendMinutes()
@@ -32,12 +35,14 @@ public class PebbleTrainInfoConsumer implements TrainInfoConsumer {
 
     @Override
     public void bye(Context context) {
-        sendDataToPebble(context, PebbleConstants.BYE, "A vonat elment", "BYE: A vonat elment");
+        String message = context.getResources().getText(R.string.info_message_train_passed).toString();
+        sendDataToPebble(context, PebbleConstants.BYE, message, "BYE: train passed");
     }
 
     @Override
     public void noMoreTrainToday(Context context) {
-        sendDataToPebble(context, PebbleConstants.TIME_UPDATE, "Ma már nincs több vonat", "TIME_UPDATE: Ma már nincs több vonat");
+        String message = context.getResources().getText(R.string.info_message_no_more_train_today).toString();
+        sendDataToPebble(context, PebbleConstants.TIME_UPDATE, message, "TIME_UPDATE: no more train today");
     }
 
     private void sendDataToPebble(Context context, int key, String message, String log) {

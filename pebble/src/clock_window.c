@@ -2,9 +2,13 @@
 #include "clock_window.h"
 #include "stations_window.h"
 
+static char from_station[100];
+static char to_station[100];
+
 static void select_click_handler(ClickRecognizerRef recognizer, void *context)
 {
-    newsearch();
+    //FIXME memory leakage
+    //newsearch();
 }
 
 static void down_click_handler(ClickRecognizerRef recognizer, void *context)
@@ -14,6 +18,7 @@ static void down_click_handler(ClickRecognizerRef recognizer, void *context)
 
 static void back_click_handler(ClickRecognizerRef recognizer, void *context)
 {
+    stopsearch();
     window_stack_pop_all(true);
 }
 
@@ -36,6 +41,7 @@ static void initialise_ui(void) {
   window_set_fullscreen(s_window, false);
   
   s_res_bitham_42_bold = fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD);
+  
   // clock_textlayer
   clock_textlayer = text_layer_create(GRect(0, 50, 144, 52));
   text_layer_set_text(clock_textlayer, "??:??");
@@ -68,13 +74,17 @@ static void handle_window_unload(Window* window) {
   destroy_ui();
 }
 
-void show_clock_window(char* from_station, char* to_station) {
+void show_clock_window(char* p_from_station, char* p_to_station) {
   initialise_ui();
+  //char from_station[strlen(p_from_station)];
+  //char to_station[strlen(p_to_station)];
+  strcpy(from_station, p_from_station);
+  strcpy(to_station, p_to_station);
   text_layer_set_text(from_textlayer, from_station);
   text_layer_set_text(to_textlayer, to_station);
   window_set_window_handlers(s_window, (WindowHandlers) {
-    .unload = handle_window_unload,
-  });
+      .unload = handle_window_unload,
+    });
   window_stack_push(s_window, true);
 }
 

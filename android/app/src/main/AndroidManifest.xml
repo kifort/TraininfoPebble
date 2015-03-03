@@ -9,18 +9,26 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme" >
 
         <activity
-            android:name=".android.ui.TraininfoActivity"
-            android:label="@string/title_activity_traininfo" >
+            android:name=".android.ui.StationsActivity"
+            android:label="@string/title_activity_stations"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <service android:name=".android.service.TraininfoService" />
+
+        <receiver android:name=".pebble.PebbleReceiver" >
+            <intent-filter>
+                <action android:name="com.getpebble.action.app.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
 </manifest>

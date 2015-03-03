@@ -14,5 +14,7 @@ public class PebbleConstants {
             TO_STATION = 2,
             TIME_UPDATE = 3,
             ACK = 4,
-            BYE = 5;
+            BYE = 5,
+            STOP_TIMETABLE_UPDATE = 6,
+            GET_STATIONS = 7;
 }

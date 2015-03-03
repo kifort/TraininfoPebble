@@ -1,5 +1,7 @@
 package hu.kifor.tamas.vonatinfo;
 
+import java.util.List;
+
 import hu.kifor.tamas.vonatinfo.model.Timetable;
 
 /**
@@ -7,4 +9,9 @@ import hu.kifor.tamas.vonatinfo.model.Timetable;
  */
 public interface TrainDao {
     Timetable search(String departure, String destination);
+    void refreshStations();
+    List<String> getAllStations();
+    //List<String> getFavouriteStations();
+    //void setFavouriteStations(List<String> favouriteStations);
+
 }
