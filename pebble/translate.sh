@@ -10,7 +10,7 @@ rm resources/locale_english.bin
 rm resources/locale_german.bin
 rm resources/locale_hungarian.bin
 
-#python dict2bin.py locale_english.json
+python dict2bin.py locale_english.json
 python dict2bin.py locale_german.json
 python dict2bin.py locale_hungarian.json
 

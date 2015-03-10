@@ -2,6 +2,7 @@
 #include "android_listener.h"
 #include "android_client.h"
 #include "clock_window.h"
+#include "message_window.h"
 #include "stations_window.h"
 
 const int MAX_NUMBER_OF_FAVOURITE_STATIONS = 5;

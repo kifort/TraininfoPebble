@@ -4,78 +4,90 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="hu.kifor.tamas.vonatinfo.android.ui.StationsActivity">
+    tools:context="hu.kifor.tamas.vonatinfo.android.ui.StationsActivity"
+    android:background="#0099CC">
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/messageTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_alignRight="@+id/favouriteStation4"
+        android:layout_alignEnd="@+id/favouriteStation4"
+        android:textColor="#FFFFFF"
+        android:background="#FF8800" />
 
     <AutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/favouriteStation1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:hint="@string/favourite_station1"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <AutoCompleteTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/favouriteStation2"
-        android:layout_below="@+id/favouriteStation1"
+        android:background="#0099CC"
+        android:layout_below="@+id/messageTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="@string/favourite_station2"
-        android:layout_alignRight="@+id/favouriteStation1"
-        android:layout_alignEnd="@+id/favouriteStation1" />
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/messageTextView"
+        android:layout_alignEnd="@+id/messageTextView" />
 
     <AutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/favouriteStation2"
+        android:hint="@string/favourite_station2"
+        android:background="#0099CC"
+        android:layout_below="@+id/favouriteStation1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/favouriteStation3"
+        android:hint="@string/favourite_station3"
+        android:background="#0099CC"
         android:layout_below="@+id/favouriteStation2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="@string/favourite_station3"
+        android:layout_marginTop="10dp"
         android:layout_alignRight="@+id/favouriteStation2"
         android:layout_alignEnd="@+id/favouriteStation2" />
 
     <AutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/favouriteStation4"
+        android:hint="@string/favourite_station4"
+        android:background="#0099CC"
         android:layout_below="@+id/favouriteStation3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="@string/favourite_station4"
+        android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <AutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/favouriteStation5"
-        android:layout_below="@+id/favouriteStation4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:hint="@string/favourite_station5"
-        android:layout_alignRight="@+id/favouriteStation4"
-        android:layout_alignEnd="@+id/favouriteStation4" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/messageTextView"
-        android:layout_below="@+id/favouriteStation5"
+        android:background="#0099CC"
+        android:layout_below="@+id/favouriteStation4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/favouriteStation5"
-        android:layout_alignEnd="@+id/favouriteStation5"
-        android:textAlignment="center" />
-
-
-
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

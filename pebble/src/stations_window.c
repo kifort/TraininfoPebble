@@ -94,6 +94,7 @@ void newsearch(void) {
   }
   from_station = number_of_selectable_stations;
   to_station = number_of_selectable_stations;
+  window_stack_pop(true);
   show_stations_window();
 }
 

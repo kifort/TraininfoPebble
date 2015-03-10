@@ -4,7 +4,7 @@
     <string name="app_name">Vonatinfo</string>
     <string name="action_settings">Beállítások</string>
     <string name="action_stations">Állomások</string>
-    <string name="title_activity_stations">Kedvenc Állomások</string>
+    <string name="title_activity_stations">Vonatinfo</string>
     <string name="title_activity_traininfo">Vonatinfo</string>
     <string name="favourite_station1">1. kedvenc állomás</string>
     <string name="favourite_station2">2. kedvenc állomás</string>

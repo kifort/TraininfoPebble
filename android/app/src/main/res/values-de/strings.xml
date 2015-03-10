@@ -5,7 +5,7 @@
     <string name="title_activity_traininfo">Zuginfo</string>
     <string name="action_settings">Einstellungen</string>
     <string name="action_stations">Stationen</string>
-    <string name="title_activity_stations">Favorit Stationen</string>
+    <string name="title_activity_stations">Zuginfo</string>
     <string name="favourite_station1">1. Favorit Station</string>
     <string name="favourite_station2">2. Favorit Station</string>
     <string name="favourite_station3">3. Favorit Station</string>

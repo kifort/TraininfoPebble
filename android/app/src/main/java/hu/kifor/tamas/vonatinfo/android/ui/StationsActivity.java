@@ -1,6 +1,8 @@
 package hu.kifor.tamas.vonatinfo.android.ui;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -162,8 +164,10 @@ public class StationsActivity extends ActionBarActivity {
             isValid = trainDao.getAllStations().contains(stationName);
             if(!isValid) {
                 favouriteStation.setError(getResources().getString(R.string.error_message_unknown_station));
+                favouriteStation.setTextColor(Color.parseColor("#CC0000"));
             } else {
                 favouriteStation.setError(null);
+                favouriteStation.setTextColor(Color.parseColor("#ffb6e800"));
             }
         }
         return isValid;

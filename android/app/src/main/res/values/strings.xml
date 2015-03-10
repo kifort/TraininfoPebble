@@ -5,7 +5,7 @@
     <string name="title_activity_traininfo">Traininfo</string>
     <string name="action_settings">Settings</string>
     <string name="action_stations">Stations</string>
-    <string name="title_activity_stations">Favourite Stations</string>
+    <string name="title_activity_stations">Traininfo</string>
     <string name="favourite_station1">1. favourite station</string>
     <string name="favourite_station2">2. favourite station</string>
     <string name="favourite_station3">3. favourite station</string>

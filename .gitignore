@@ -1,2 +1,6 @@
-
 pebble/.lock-waf_darwin_build
+pebble/pebble.xcodeproj
+android/.gradle
+android/.idea
+android/app/app-release.apk
+android/app/manifest-merger-release-report.txt
